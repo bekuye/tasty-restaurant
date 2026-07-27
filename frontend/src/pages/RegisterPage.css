@@ -1,0 +1,96 @@
+
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 440px;
+}
+
+.register-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.register-header h2 {
+  font-size: 1.8rem;
+  color: #2c1810;
+  margin-bottom: 0.3rem;
+}
+
+.register-header p {
+  color: #666;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.register-btn {
+  padding: 0.9rem;
+  background: #2c1810;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.register-btn:hover:not(:disabled) {
+  background: #4a2c1a;
+  transform: translateY(-2px);
+}
+
+.register-btn:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+}
+
+.register-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0ebe6;
+}
+
+.register-footer a {
+  color: #2c1810;
+  font-weight: 600;
+}
+
+.register-footer a:hover {
+  color: #ffd700;
+}
+
+.error-message {
+  background: #fef6f6;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  padding: 0.8rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    padding: 1.5rem;
+  }
+}
