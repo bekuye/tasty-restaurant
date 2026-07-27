@@ -1,0 +1,138 @@
+
+.confirmation-page {
+  padding: 3rem 0;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.confirmation-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.confirmation-icon {
+  font-size: 4rem;
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+.confirmation-card h2 {
+  color: #2c1810;
+  margin-bottom: 0.3rem;
+}
+
+.order-number {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.order-details {
+  text-align: left;
+  background: #f8f4f0;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+}
+
+.detail-label {
+  color: #666;
+}
+
+.detail-value {
+  font-weight: 500;
+  color: #2c1810;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.pending {
+  background: #f39c12;
+  color: white;
+}
+
+.status-badge.processing {
+  background: #3498db;
+  color: white;
+}
+
+.status-badge.preparing {
+  background: #9b59b6;
+  color: white;
+}
+
+.status-badge.ready {
+  background: #2ecc71;
+  color: white;
+}
+
+.status-badge.completed {
+  background: #27ae60;
+  color: white;
+}
+
+.status-badge.cancelled {
+  background: #e74c3c;
+  color: white;
+}
+
+.order-items {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.order-items h3 {
+  color: #2c1810;
+  margin-bottom: 0.5rem;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #f0ebe6;
+}
+
+.order-item .item-name {
+  color: #2c1810;
+}
+
+.order-item .item-price {
+  color: #666;
+}
+
+.confirmation-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.confirmation-actions .btn {
+  padding: 0.7rem 2rem;
+}
+
+@media (max-width: 480px) {
+  .confirmation-card {
+    padding: 1.5rem;
+    margin: 0 1rem;
+  }
+}
