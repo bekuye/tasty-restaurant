@@ -12,7 +12,7 @@ A full-stack restaurant ordering application built with React.
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/tasty-restaurant.git
+git clone https://github.com/bekuye/tasty-restaurant.git
 cd tasty-restaurant/frontend
 npm install
 npm start
