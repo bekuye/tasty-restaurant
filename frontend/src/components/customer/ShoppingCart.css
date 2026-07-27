@@ -1,0 +1,270 @@
+
+.shopping-cart {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0ebe6;
+  margin-bottom: 1.5rem;
+}
+
+.cart-header h2 {
+  margin: 0;
+  color: #2c1810;
+}
+
+.clear-cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  padding: 0.4rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clear-cart-btn:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+.cart-items {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 80px 1fr 180px 120px;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0ebe6;
+  transition: background 0.3s ease;
+}
+
+.cart-item:hover {
+  background: #faf8f6;
+}
+
+.item-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-name {
+  margin: 0 0 0.3rem 0;
+  color: #2c1810;
+  font-size: 1rem;
+}
+
+.item-price {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.item-category {
+  display: inline-block;
+  background: #f0ebe6;
+  padding: 1px 8px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  color: #4a2c1a;
+  margin-top: 0.2rem;
+}
+
+.item-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.item-controls .quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: #f8f4f0;
+  border-radius: 8px;
+  padding: 0.2rem;
+}
+
+.item-controls .qty-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-controls .qty-btn:hover {
+  background: #e0d6cc;
+}
+
+.item-controls .qty-display {
+  min-width: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.remove-btn:hover {
+  color: #e74c3c;
+}
+
+.item-subtotal {
+  text-align: right;
+  font-weight: bold;
+  color: #2c1810;
+}
+
+.cart-summary {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #f0ebe6;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  color: #555;
+}
+
+.summary-row.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2c1810;
+  border-top: 1px solid #ddd;
+  padding-top: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.checkout-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: #2c1810;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.checkout-btn:hover {
+  background: #4a2c1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(44, 24, 16, 0.3);
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.empty-cart-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.cart-empty h3 {
+  color: #2c1810;
+  margin-bottom: 0.5rem;
+}
+
+.cart-empty p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.browse-menu-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #2c1810;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.browse-menu-btn:hover {
+  background: #4a2c1a;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    grid-template-columns: 60px 1fr;
+    gap: 0.5rem;
+    padding: 0.8rem 0;
+  }
+  
+  .item-controls {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  
+  .item-subtotal {
+    grid-column: 2;
+    text-align: left;
+    padding-left: 0;
+  }
+  
+  .shopping-cart {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .cart-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
